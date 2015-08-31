@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>FARO</title>
+
+<script type="application/javascript" src="../js/jquery.min.js"></script>
+
+<script>
+	$(document).on("ready", main);
+	
+	function cargarNota(url){
+		$("#load-async").text("Cargando....");
+		$("#load-async").load(url);
+	}
+	function main(){
+		$("#load-async").html(function(){
+			cargarNota("http://www.farodeoriente.org/prueba/musica.html");
+			});
+		
+		}
+</script>
+
+<style type="text/css">
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body,ul{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: ubuntu, helvetica, arial;
+	background:#FFF;
+}
+
+#header {
+	position:fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	border-style:solid;
+	border-width: 3px;
+	border-color:#fa663e;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #ffad81;
+	padding: 0;
+	color: #9f431e;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+#header .btn  {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width:10%;
+    line-height: 36px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#header .btn a img {
+	height:30px;
+	margin-top:6px;
+}
+
+#footer {
+	position:fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background: #0CF;
+	padding: 0;
+	border-top: 1px solid #09F;
+}
+
+#wrapper {
+	position:fixed;
+	z-index:1 ;
+	top: 60px;
+	bottom: 48px;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	overflow: hidden;
+	height: 41px;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 900px;
+	height: auto;
+	background-color: #a00;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#scroller li a {
+	z-index:2;
+	display: block;
+	float: left;
+	width: 100px;
+	height: 3em;
+	border-right: 1px solid #0CF ;
+	background-color: #09F;
+	font-size: 14px;
+	color:#FFF;
+	padding-top: .3em;
+	text-decoration:none;
+	
+}
+
+#load-async{
+	display: block;
+	margin-bottom: 50px;
+	margin-top:65px;
+	}
+
+img,iframe{max-width:100%;}
+
+#load-async html,div,span,iframe,h1,h2,p,a,em,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+
+</style>
+</head>
+<body onload="loaded()">
+<div id="header"><div class="btn"><a href="../index.html"><img src="../img/mus.png"/></a></div>Musica</div>
+
+<div id="load-async"></div>
+
+</body>
+</html>

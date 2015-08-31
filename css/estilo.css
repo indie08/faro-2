@@ -1,0 +1,68 @@
+body{
+	width:100%;}
+ .container
+{
+	width: 95%;
+	margin: 0 auto;
+}
+/*--- latest-posts ---*/
+ .latest-posts 
+ {
+	 margin:0;
+	 padding:0;}
+ .container-0 
+{
+	border-style:solid;
+	border-width:2px;
+	margin-bottom:1em;
+	border-color: #31d689;
+}
+ .container-0 h2 
+{
+	color:#288884;
+	font-family: ubuntu, helvetica, arial;
+	font-weight:700;
+	font-size: 18px;
+	margin:0 ;
+	padding:0;
+}
+ .container-0 h3 
+{
+	color:#288884;
+	font-family: ubuntu, helvetica, arial;
+	font-weight:700;
+	font-size: 18px;
+	margin-top: 7%;
+	text-decoration:none;
+}
+ .container-0 span
+{
+	display:block;
+	font-family: ubuntu, helvetica, arial;
+	font-weight: 700;
+	color:#949393;
+	font-size: 13px;
+	margin:0;
+}
+ .container-0 p
+{
+	font-family: ubuntu, helvetica, arial;
+	color:#999;
+	font-size: 13px;
+}
+ .container-0 ul li
+{
+	font-family: ubuntu, helvetica, arial;
+	color:#999;
+	font-size: 13px;
+	margin-left:2em;
+}
+.title{
+	background:#0F9;
+	padding-top:5px;
+	margin:0;
+	margin-bottom:5px;
+	border-bottom:solid;
+	border-widht:1px;
+	border-color: #31d689;
+}
