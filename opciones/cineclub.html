@@ -156,7 +156,21 @@ body {
 	margin-top:65px;
 	}
 img,iframe{max-width:100%;}
-
+#header .reload{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width:10%;
+    line-height: 36px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+#header .reload a img{
+	float:right;
+		height:25px;
+	margin-top:6px;
+}
 
 #load-async html,div,span,iframe,h1,h2,p,a,em,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 
@@ -164,7 +178,9 @@ img,iframe{max-width:100%;}
 </style>
 </head>
 <body onload="loaded()">
-<div id="header"><div class="btn"><a href="../index.html"><img src="../img/cin.png"/></a></div>Cineclub</div>
+	<div id="header"><div class="btn">
+		<a href="../index.html"><img src="../img/cin.png"/></a></div>Cineclub<div class="reload">
+        <a href="javascript:location.reload()"><img src="../img/reload.png"/></a></div></div>
 
 <div id="load-async"></div>
 
